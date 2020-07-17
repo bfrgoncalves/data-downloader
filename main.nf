@@ -22,7 +22,7 @@ Channel
 
 process download_file {
     tag "${url.split("/").last()}"
-    publishDir params.outdir, mode: 'copy'
+    publishDir params.outdir
     cpus 1
 
     input:
